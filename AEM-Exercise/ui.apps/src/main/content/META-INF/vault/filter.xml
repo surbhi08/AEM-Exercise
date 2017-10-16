@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/AEM-Exercise">
+        <exclude pattern="/apps/AEM-Exercise/install" />
+    </filter>
+    <filter root="/apps/sling" />
+    <filter root="/etc/designs/AEM-Exercise"/>
+</workspaceFilter>

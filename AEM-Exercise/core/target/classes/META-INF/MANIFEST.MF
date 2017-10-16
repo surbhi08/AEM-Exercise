@@ -1,0 +1,50 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1504438091442
+Build-Jdk: 1.8.0_92
+Built-By: Vivek
+Bundle-Description: Core bundle for AEM-Exercise
+Bundle-ManifestVersion: 2
+Bundle-Name: AEM-Exercise - Core
+Bundle-SymbolicName: AEM-Exercise.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: au.com.woolworths.constants;version="1.0.0",au.com.woolw
+ orths.core.filters;uses:="javax.servlet";version="1.0.0",au.com.woolwor
+ ths.core.listeners;uses:="org.osgi.service.event";version="1.0.0",au.co
+ m.woolworths.core.models;uses:="javax.annotation,javax.inject,org.apach
+ e.sling.api.resource,org.apache.sling.models.annotations";version="1.0.
+ 0",au.com.woolworths.core;version="1.0",au.com.woolworths.core.schedule
+ rs;uses:="org.apache.sling.api.resource,org.apache.sling.commons.json";
+ version="1.0.0",au.com.woolworths.core.servlets;uses:="javax.servlet,or
+ g.apache.sling.api,org.apache.sling.api.servlets";version="1.0.0"
+Import-Package: org.apache.sling.models.annotations;version="[1.1,2)",ja
+ vax.annotation,javax.inject;version="[0.0,1)",javax.jcr;version="[2.0,3
+ )",javax.net.ssl,javax.servlet,org.apache.sling.api;version="[2.3,3)",o
+ rg.apache.sling.api.request;version="[2.4,3)",org.apache.sling.api.reso
+ urce;version="[2.5,3)",org.apache.sling.api.servlets;version="[2.1,3)",
+ org.apache.sling.commons.json;version="[2.0,3)",org.apache.sling.common
+ s.osgi;version="[2.2,3)",org.apache.sling.settings;version="[1.3,2)",or
+ g.osgi.service.event;version="[1.2,2)",org.slf4j;version="[1.5,2)",com.
+ day.cq.commons.jcr;version="[5.7.0,7.0.0)",org.apache.sling.event.jobs;
+ version="[1.5,2]"
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
+ rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
+ ctClass="java.lang.Runnable";scheduler.period=60;scheduler.concurrent=f
+ alse;service.vendor=Adobe,osgi.service;effective:=active;objectClass="j
+ ava.lang.Runnable";scheduler.expression="*/30 * * * * ?";scheduler.conc
+ urrent=false;service.vendor=Adobe,osgi.service;effective:=active;object
+ Class="javax.servlet.Filter";service.ranking=-700;sling.filter.scope=RE
+ QUEST;service.vendor=Adobe,osgi.service;effective:=active;objectClass="
+ org.osgi.service.event.EventHandler";event.topics="org/apache/sling/api
+ /resource/Resource/*";service.vendor=Adobe
+Require-Capability: osgi.service;effective:=active;filter:="(objectClass
+ =org.apache.sling.api.resource.ResourceResolverFactory)",osgi.ee;filter
+ :="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/au.com.woolworths.core.schedulers.WeatherSch
+ eduler.xml,OSGI-INF/au.com.woolworths.core.servlets.GetWeatherTemperatu
+ reServlet.xml,OSGI-INF/au.com.woolworths.core.filters.LoggingFilter.xml
+ ,OSGI-INF/au.com.woolworths.core.schedulers.SimpleScheduledTask.xml,OSG
+ I-INF/au.com.woolworths.core.listeners.SimpleResourceListener.xml,OSGI-
+ INF/au.com.woolworths.core.servlets.SimpleServlet.xml
+Sling-Model-Packages: au.com.woolworths.core
+Tool: Bnd-2.3.0.201405100607

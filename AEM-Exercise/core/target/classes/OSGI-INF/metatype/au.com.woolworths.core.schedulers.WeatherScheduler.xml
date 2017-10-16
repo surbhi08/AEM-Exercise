@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/au.com.woolworths.core.schedulers.WeatherScheduler">
+    <OCD id="au.com.woolworths.core.schedulers.WeatherScheduler" name="%au.com.woolworths.core.schedulers.WeatherScheduler.name" description="%au.com.woolworths.core.schedulers.WeatherScheduler.description">
+        <AD id="scheduler.period" type="Long" default="900" name="%au.com.woolworths.core.schedulers.WeatherScheduler.scheduler.period.name" description="%au.com.woolworths.core.schedulers.WeatherScheduler.scheduler.period.description"/>
+        <AD id="scheduler.concurrent" type="Boolean" default="false" name="%au.com.woolworths.core.schedulers.WeatherScheduler.scheduler.concurrent.name" description="%au.com.woolworths.core.schedulers.WeatherScheduler.scheduler.concurrent.description"/>
+    </OCD>
+    <Designate pid="au.com.woolworths.core.schedulers.WeatherScheduler">
+        <Object ocdref="au.com.woolworths.core.schedulers.WeatherScheduler"/>
+    </Designate>
+</metatype:MetaData>

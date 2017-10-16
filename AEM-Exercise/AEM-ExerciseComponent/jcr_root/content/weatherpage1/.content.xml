@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-09-03T23:32:52.675+10:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/surbhiproject/template/templateWeb"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="weather page 1"
+        sling:resourceType="surbhiproject/components/page/templateWeb1">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <title
+                jcr:created="{Date}2017-09-03T22:44:56.948+10:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-09-03T22:45:12.712+10:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Sydney, Australia"
+                sling:resourceType="geometrixx-outdoors/components/title"/>
+            <responsivegrid
+                jcr:created="{Date}2017-09-03T23:29:06.903+10:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-09-03T23:29:06.903+10:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <weather_1003849034
+                    jcr:created="{Date}2017-09-03T23:03:36.207+10:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-09-03T23:05:31.116+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="AEM-Exercise/components/content/weather"
+                    val="66"/>
+                <weather2
+                    jcr:created="{Date}2017-09-03T23:29:16.220+10:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-09-03T23:32:52.668+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="AEM-Exercise/components/content/weather2"
+                    val="39">
+                    <cq:responsive jcr:primaryType="nt:unstructured"/>
+                </weather2>
+            </responsivegrid>
+        </par>
+    </jcr:content>
+</jcr:root>

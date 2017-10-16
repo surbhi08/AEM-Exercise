@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="au.com.woolworths.core.servlets.GetWeatherTemperatureServlet">
+        <implementation class="au.com.woolworths.core.servlets.GetWeatherTemperatureServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths">
+            /bin/apis/weather
+        </property>
+        <property name="sling.servlet.methods">
+            GET
+        </property>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="au.com.woolworths.core.servlets.GetWeatherTemperatureServlet"/>
+    </scr:component>
+</components>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM-Exercise - UI apps</comment>
+<entry key="createdBy">Vivek</entry>
+<entry key="name">AEM-Exercise.ui.apps</entry>
+<entry key="created">2017-09-08T16:12:56.928+1000</entry>
+<entry key="groupId">AEM-Exercise</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">AEM-Exercise</entry>
+<entry key="description">UI apps package for AEM-Exercise</entry>
+<entry key="artifactId">AEM-Exercise.ui.apps</entry>
+<entry key="path">/etc/packages/AEM-Exercise/AEM-Exercise.ui.apps.zip</entry>
+</properties>

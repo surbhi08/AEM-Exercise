@@ -1,0 +1,12 @@
+au\com\woolworths\core\models\HelloWorldModel.class
+au\com\woolworths\core\schedulers\SimpleScheduledTask.class
+au\com\woolworths\core\SSLTest.class
+au\com\woolworths\core\package-info.class
+au\com\woolworths\core\servlets\SimpleServlet.class
+au\com\woolworths\core\SSLTest$DefaultTrustManager.class
+au\com\woolworths\core\servlets\GetWeatherTemperatureServlet.class
+au\com\woolworths\core\listeners\SimpleResourceListener.class
+au\com\woolworths\core\SSLTest$1.class
+au\com\woolworths\constants\WoolworthsConstant.class
+au\com\woolworths\core\schedulers\WeatherScheduler.class
+au\com\woolworths\core\filters\LoggingFilter.class
